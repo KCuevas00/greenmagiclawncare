@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Green Magic Lawn Care logo placeholder">
-  <circle cx="100" cy="100" r="96" fill="#ffffff" stroke="#4ade80" stroke-width="4"/>
-  <g transform="translate(100,92)" fill="none" stroke="#16a34a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M-38 42A48 48 0 0 1 -47 -13C-11 -32 0 -38 13 -55c7 14 14 29 14 55 0 38-33 69-69 69Z"/>
-    <path d="M-69 62c0-21 12.8-37 35-41C-19 15 -6 4 0 -2"/>
-  </g>
-  <text x="100" y="168" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800" fill="#0b1a12">GML</text>
-</svg>
