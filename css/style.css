@@ -311,22 +311,35 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
    HERO
    ============================================================ */
 .hero {
-  background: linear-gradient(135deg, rgba(13,33,24,0.88) 0%, rgba(13,33,24,0.75) 100%), url('../photos/bigdrainafter.jpg');
-  background-size: cover;
-  background-position: center;
+  background: var(--forest-deep);
   color: var(--paper);
   position: relative;
   overflow: hidden;
   padding: 70px 0 0;
 }
-.hero::before {
-  content: "";
-  position: absolute; inset: 0;
-  background: none;
+.hero-slides,
+.hero-overlay {
+  position: absolute;
+  inset: 0;
   pointer-events: none;
 }
+.hero-slides { z-index: 0; }
+.hero-overlay {
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(13,33,24,0.88) 0%, rgba(13,33,24,0.72) 55%, rgba(13,33,24,0.66) 100%);
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.25s ease;
+}
+.hero-slide.is-active { opacity: 1; }
 .hero-grid {
   position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 56px;
@@ -460,6 +473,8 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 
 /* ---- service area ticker ---- */
 .ticker {
+  position: relative;
+  z-index: 2;
   background: var(--sprout);
   color: var(--forest-deep);
   overflow: hidden;
