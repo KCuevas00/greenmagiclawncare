@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Green Magic Lawn Care</title>
+<meta name="description" content="Before-and-after transformations and recent project photos from Green Magic Lawn Care across Joliet, New Lenox, Frankfort, Mokena, Orland Park, Tinley Park, Plainfield and Naperville.">
+<link rel="icon" href="photos/logo-placeholder.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,650&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="photos/logo-placeholder.svg" alt="Green Magic Lawn Care logo">
+      <span>Green Magic<span class="sub">Lawn Care</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="index.html#areas">Service Area</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-outline-dark">Get a Free Quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">The Gallery</div>
+    <h1>Every yard tells a before-and-after story.</h1>
+    <p>Drag any slider to see the transformation, or browse the full set of project photos below. Filter by the kind of work you need done.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+
+    <div class="filter-bar">
+      <button class="active" data-filter="all">All Work</button>
+      <button data-filter="cleanup">Cleanups</button>
+      <button data-filter="trimming">Trimming</button>
+      <button data-filter="trees">Trees</button>
+      <button data-filter="fencing">Fence Lines</button>
+      <button data-filter="drainage">Drainage</button>
+    </div>
+
+    <!-- BEFORE / AFTER GRID -->
+    <div class="ba-grid">
+
+      <figure class="ba-card" data-cat="cleanup">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/alleyclean.jpg" alt="Alley cleaned up">
+          <div class="ba-before-wrap"><img src="photos/alleybefore.jpg" alt="Alley before cleanup"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare alley before and after">
+        </div>
+        <figcaption><b>Alley Cleanup</b><span>Debris + overgrowth removal</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="drainage">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/bigdrainafter.jpg" alt="French drain installed">
+          <div class="ba-before-wrap"><img src="photos/bigdrainbefore.jpg" alt="Standing water before French drain"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare drain before and after">
+        </div>
+        <figcaption><b>French Drain Install</b><span>Standing water, resolved</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="cleanup">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/cornerafter.jpg" alt="Yard corner cleaned">
+          <div class="ba-before-wrap"><img src="photos/cornerbefore.jpg" alt="Yard corner before cleanup"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare corner before and after">
+        </div>
+        <figcaption><b>Corner Reset</b><span>Overgrowth cleared</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="cleanup">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/dividerafter.jpg" alt="Bed divider after cleanup">
+          <div class="ba-before-wrap"><img src="photos/dividerbefore.jpg" alt="Bed divider before cleanup"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare divider before and after">
+        </div>
+        <figcaption><b>Bed Divider Cleanup</b><span>Clean lines restored</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trees">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/forestafter.jpg" alt="Tree line cleared">
+          <div class="ba-before-wrap"><img src="photos/forestbefore.jpg" alt="Overgrown tree line before"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare tree line before and after">
+        </div>
+        <figcaption><b>Tree Line Clearing</b><span>Back edge of the property</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="cleanup">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/frontafter.jpg" alt="Front yard after overhaul">
+          <div class="ba-before-wrap"><img src="photos/frontbefore.jpg" alt="Front yard before overhaul"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare front yard before and after">
+        </div>
+        <figcaption><b>Front Yard Overhaul</b><span>Full property reset</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trimming">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/largebushafter.jpg" alt="Large bush trimmed">
+          <div class="ba-before-wrap"><img src="photos/largebushbefore.jpg" alt="Large bush before trimming"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare large bush before and after">
+        </div>
+        <figcaption><b>Large Bush Trim</b><span>Shaped back down to size</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trimming">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/mediumbushafter.jpg" alt="Bush shaped up">
+          <div class="ba-before-wrap"><img src="photos/mediumbushbefore.jpg" alt="Bush before shaping"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare bush before and after">
+        </div>
+        <figcaption><b>Bush Shape-Up</b><span>Clean, defined edges</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="fencing">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/naturalfenceafter.jpg" alt="Natural fence line cleared">
+          <div class="ba-before-wrap"><img src="photos/naturalfencebefore.jpg" alt="Natural fence line before"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare fence line before and after">
+        </div>
+        <figcaption><b>Natural Fence Line</b><span>Overgrowth cleared back</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="cleanup">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/overgrownafter2.jpg" alt="Yard after overgrowth clearing">
+          <div class="ba-before-wrap"><img src="photos/overgrownbefore2.jpg" alt="Overgrown yard before"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare overgrowth before and after">
+        </div>
+        <figcaption><b>Overgrowth Clearing</b><span>Full reset</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trimming">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/overgrownbushafter.jpg" alt="Overgrown bush after trimming">
+          <div class="ba-before-wrap"><img src="photos/overgrownbushbefore.jpg" alt="Overgrown bush before trimming"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare overgrown bush before and after">
+        </div>
+        <figcaption><b>Overgrown Bush Reset</b><span>Years of growth, undone</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trees">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/roundtreeafter.jpg" alt="Tree canopy trimmed">
+          <div class="ba-before-wrap"><img src="photos/roundtreebefore.jpg" alt="Tree canopy before trim"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare tree canopy before and after">
+        </div>
+        <figcaption><b>Tree Canopy Trim</b><span>Shaped &amp; lifted</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trees">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/sidetreesafter.jpg" alt="Side trees cleared">
+          <div class="ba-before-wrap"><img src="photos/sidetreesbefore.jpg" alt="Side trees before clearing"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare side trees before and after">
+        </div>
+        <figcaption><b>Side Tree Clearing</b><span>Opened up the walkway</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trimming">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/smallbushafter.jpg" alt="Small bush cleaned up">
+          <div class="ba-before-wrap"><img src="photos/smallbushbefore.jpg" alt="Small bush before cleanup"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare small bush before and after">
+        </div>
+        <figcaption><b>Small Bush Cleanup</b><span>Quick shape-up</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="fencing">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/thinfenceafter.jpg" alt="Fence line thinned">
+          <div class="ba-before-wrap"><img src="photos/thinfencebefore.jpg" alt="Fence line before thinning"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare fence line thinning before and after">
+        </div>
+        <figcaption><b>Fence Line Thinning</b><span>Brush cleared along the fence</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trees">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/treeafter.jpg" alt="Tree cleanup after">
+          <div class="ba-before-wrap"><img src="photos/treebefore.jpg" alt="Tree before cleanup"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare tree before and after">
+        </div>
+        <figcaption><b>Tree Cleanup</b><span>Deadwood removed</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="trees">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/treebaseafter.jpg" alt="Tree base cleaned up">
+          <div class="ba-before-wrap"><img src="photos/treebasebefore.jpg" alt="Tree base before cleanup"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare tree base before and after">
+        </div>
+        <figcaption><b>Tree Base Cleanup</b><span>Cleared growth at the base</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="fencing">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/weedsfenceafter.jpg" alt="Weeds cleared along fence">
+          <div class="ba-before-wrap"><img src="photos/weedsfencebefore.jpg" alt="Weeds before clearing along fence"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare fence weeds before and after">
+        </div>
+        <figcaption><b>Weed &amp; Fence Clearing</b><span>Fence line, fully exposed</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="fencing">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/whitefenceafter.jpg" alt="White fence line reset">
+          <div class="ba-before-wrap"><img src="photos/whitefencebefore.jpg" alt="White fence line before reset"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare white fence before and after">
+        </div>
+        <figcaption><b>Fence Line Reset</b><span>Growth cleared from the base</span></figcaption>
+      </figure>
+
+      <figure class="ba-card" data-cat="cleanup">
+        <div class="ba-slider">
+          <span class="ba-tag before">Before</span><span class="ba-tag after">After</span>
+          <img class="ba-img" src="photos/lawnplantafter.jpg" alt="Bed planting refresh after">
+          <div class="ba-before-wrap"><img src="photos/lawnplantbefore.jpg" alt="Bed before planting refresh"></div>
+          <div class="ba-handle"></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare planting bed before and after">
+        </div>
+        <figcaption><b>Bed Planting Refresh</b><span>New plantings settled in</span></figcaption>
+      </figure>
+
+    </div>
+
+    <p class="divider-note">More from the field — click any photo to enlarge</p>
+  </div>
+</section>
+
+<!-- MOSAIC GRID -->
+<section class="section-tight bg-dim">
+  <div class="wrap">
+    <div class="mosaic">
+      <figure data-cat="cleanup"><img src="photos/backdoorcleanup.jpg" alt="Back door cleanup"><figcaption>Back Door Cleanup</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/biglawn.jpg" alt="Large freshly mowed lawn"><figcaption>Weekly Mow</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/bigtreebasecollage.jpg" alt="Large tree base cleanup collage"><figcaption>Tree Base Cleanup</figcaption></figure>
+      <figure data-cat="trimming"><img src="photos/bush.jpg" alt="Bush detail"><figcaption>Bush Detail</figcaption></figure>
+      <figure data-cat="trimming"><img src="photos/bushdecorationcollage.jpg" alt="Bush shaping collage"><figcaption>Bush Shaping</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/cleaneduptree.jpg" alt="Cleaned up tree"><figcaption>Tree Cleanup</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/cleanlawn (2).jpg" alt="Clean mowed lawn"><figcaption>Fresh Cut</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/cleanlawn (3).jpg" alt="Clean mowed lawn"><figcaption>Fresh Cut</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/cleanlawn (4).jpg" alt="Clean mowed lawn"><figcaption>Fresh Cut</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/cleanlawn (5).jpg" alt="Clean mowed lawn"><figcaption>Fresh Cut</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/cleanlawncrooked.jpg" alt="Clean mowed lawn, angled view"><figcaption>Fresh Cut</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/divideraftercloser.jpg" alt="Bed divider closeup after cleanup"><figcaption>Bed Divider Detail</figcaption></figure>
+      <figure data-cat="drainage"><img src="photos/drainin.jpg" alt="Drain pipe going in"><figcaption>Drain Install</figcaption></figure>
+      <figure data-cat="drainage"><img src="photos/drainprogress.jpg" alt="French drain project in progress"><figcaption>Drain In Progress</figcaption></figure>
+      <figure data-cat="drainage"><img src="photos/drainprogresscloseup.jpg" alt="French drain closeup"><figcaption>Drain Detail</figcaption></figure>
+      <figure data-cat="drainage"><img src="photos/drainfinal.jpg" alt="Finished French drain"><figcaption>Finished Drain</figcaption></figure>
+      <figure data-cat="drainage"><img src="photos/tubeintrench.jpg" alt="Drain tube in trench"><figcaption>Drain Tube</figcaption></figure>
+      <figure data-cat="drainage"><img src="photos/roots.jpg" alt="Root removal during drain work"><figcaption>Root Removal</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/fallentree.jpg" alt="Fallen tree cleanup"><figcaption>Storm Cleanup</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/fallentree2.jpg" alt="Fallen tree cleanup"><figcaption>Storm Cleanup</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/fallentreeprogress.jpg" alt="Fallen tree cleanup in progress"><figcaption>Storm Cleanup</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/splittree.jpg" alt="Split tree removal"><figcaption>Split Tree Removal</figcaption></figure>
+      <figure data-cat="fencing"><img src="photos/fencedweedcleanup.jpg" alt="Fence and weed cleanup"><figcaption>Fence Line Cleanup</figcaption></figure>
+      <figure data-cat="fencing"><img src="photos/fencelawncrooked.jpg" alt="Lawn along fence"><figcaption>Fence Line Mow</figcaption></figure>
+      <figure data-cat="fencing"><img src="photos/fencesidecleanup.jpg" alt="Fence side cleanup"><figcaption>Fence Side Cleanup</figcaption></figure>
+      <figure data-cat="fencing"><img src="photos/whitefenceafter2.jpg" alt="White fence line, alternate angle"><figcaption>Fence Line Reset</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/frontbushcleanup.jpg" alt="Front bush cleanup"><figcaption>Front Bush Cleanup</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/frontlawncleanup.jpg" alt="Front lawn cleanup"><figcaption>Front Lawn Cleanup</figcaption></figure>
+      <figure data-cat="cleanup"><img src="photos/frontlawncollage.jpg" alt="Front lawn cleanup collage"><figcaption>Front Yard Reset</figcaption></figure>
+      <figure data-cat="trimming"><img src="photos/hugebush.jpg" alt="Huge overgrown bush"><figcaption>Before: Huge Bush</figcaption></figure>
+      <figure data-cat="trimming"><img src="photos/hugebushafter.jpg" alt="Huge bush after trimming"><figcaption>After: Trimmed Down</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/overgrowntreecollage.jpg" alt="Overgrown tree cleanup collage"><figcaption>Tree Cleanup</figcaption></figure>
+      <figure data-cat="trees"><img src="photos/treecleanupcollage.jpg" alt="Tree cleanup collage"><figcaption>Tree Cleanup</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>See something close to your yard?</h2>
+        <p>Send us a few photos and we'll put together a free estimate.</p>
+      </div>
+      <a href="contact.html" class="btn" style="background:var(--forest-deep); color:var(--sprout);">Request a Free Quote</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="photos/logo-placeholder.svg" alt="Green Magic Lawn Care logo">
+          <span>Green Magic Lawn Care</span>
+        </div>
+        <p>Owner-operated lawn care and landscaping across the south suburbs. Se habla español.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html#areas">Service Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <ul>
+          <li>Joliet · New Lenox</li>
+          <li>Frankfort · Mokena</li>
+          <li>Orland Park · Tinley Park</li>
+          <li>Plainfield · Naperville</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18150000000">(815) 000-0000</a></li>
+          <li><a href="mailto:info@greenmagiclawncare.com">info@greenmagiclawncare.com</a></li>
+          <li>Mon–Sat: 7am–7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Green Magic Lawn Care. All rights reserved.</span>
+      <span>Free Estimates · Se Habla Español</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <img src="" alt="">
+  <span class="lb-cap"></span>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
