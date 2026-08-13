@@ -289,9 +289,15 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     border-bottom: 1px solid var(--line);
     color: var(--forest-deep);
   }
-  .nav-links a.active::after { display: none; }
   .nav-links a.active {
-    color: var(--moss);
+    color: var(--forest-deep);
+  }
+  .nav-links a.active::after {
+    display: block;
+    left: 4px;
+    right: auto;
+    bottom: 10px;
+    width: 28px;
   }
   .nav-menu-cta {
     margin-top: 16px;
@@ -346,12 +352,26 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   margin-bottom: 0;
 }
 .hero h1 .hero-brand {
-  display: block;
-  font-size: clamp(2.8rem, 5.6vw, 4.6rem);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
   font-weight: 650;
   letter-spacing: -0.02em;
   line-height: 0.98;
   color: var(--sprout);
+  text-wrap: balance;
+}
+.hero h1 .hero-brand img {
+  width: clamp(56px, 7vw, 88px);
+  height: clamp(56px, 7vw, 88px);
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: rgba(245, 246, 238, 0.12);
+  box-shadow: 0 10px 28px -12px rgba(0, 0, 0, 0.45);
+}
+.hero h1 .hero-brand-text {
+  display: block;
   text-wrap: balance;
 }
 .hero h1 .hero-line {
@@ -695,11 +715,17 @@ section { padding: 92px 0; }
 }
 .gallery-grid a:hover span { opacity: 1; transform: translateY(0); }
 .gallery-grid .tall { grid-row: span 2; }
-.gallery-grid .wide { grid-column: span 2; }
+.gallery-grid .wide {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.gallery-grid .wide img {
+  object-position: center center;
+}
 
 @media (max-width: 900px) {
   .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
-  .gallery-grid .wide { grid-column: span 2; }
+  .gallery-grid .wide { grid-column: span 2; grid-row: span 2; }
 }
 
 /* areas list */
@@ -968,7 +994,12 @@ section { padding: 92px 0; }
   }
   .hero h1 { gap: 10px; }
   .hero h1 .hero-brand {
-    font-size: clamp(2.15rem, 9.5vw, 2.9rem);
+    gap: 12px;
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+  .hero h1 .hero-brand img {
+    width: 48px;
+    height: 48px;
   }
   .hero h1 .hero-line {
     font-size: clamp(1.05rem, 4.4vw, 1.3rem);
