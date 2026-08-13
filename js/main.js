@@ -1,9 +1,37 @@
 // ---------- mobile nav ----------
-document.querySelectorAll('.nav-toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('open');
+function initMobileNav() {
+  const header = document.querySelector('.site-header');
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  if (!header || !toggle || !menu) return;
+
+  const setOpen = (open) => {
+    header.classList.toggle('nav-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+
+  toggle.addEventListener('click', () => {
+    setOpen(!header.classList.contains('nav-open'));
   });
-});
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => setOpen(false));
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') setOpen(false);
+  });
+
+  document.addEventListener('click', e => {
+    if (!header.classList.contains('nav-open')) return;
+    if (!header.contains(e.target)) setOpen(false);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) setOpen(false);
+  });
+}
 
 // ---------- before/after sliders ----------
 function initBaSliders() {
@@ -104,6 +132,7 @@ function initContactForm() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initMobileNav();
   initBaSliders();
   initFilters();
   initLightbox();

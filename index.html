@@ -18,15 +18,17 @@
       <img src="photos/green_magic_lawn_care_logo_transparent.png" alt="Green Magic Lawn Care logo">
       <span>Green Magic<span class="sub">Lawn Care</span></span>
     </a>
-    <div class="nav-links">
-      <a href="index.html#services">Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="index.html#areas">Service Area</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="nav-cta">
-      <a href="contact.html" class="btn btn-outline-dark">Get a Free Quote</a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <div class="nav-menu" id="nav-menu">
+      <div class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#areas">Service Area</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-menu-cta">Get a Free Quote</a>
     </div>
   </nav>
 </header>
@@ -77,47 +79,62 @@
     </div>
 
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card has-photo">
+        <img class="service-bg" src="photos/cleanlawn.jpg" alt="" aria-hidden="true">
         <span class="num">01</span>
         <h3>Lawn Care &amp; Mowing</h3>
         <p>Weekly or bi-weekly mowing, edging, and trimming that keeps your lawn sharp all season.</p>
         <ul><li>Mowing + edging</li><li>Line trimming</li><li>Seasonal scheduling</li></ul>
       </div>
-      <div class="service-card">
+      <div class="service-card has-photo">
+        <img class="service-bg" src="photos/mediumbushafter.jpg" alt="" aria-hidden="true">
         <span class="num">02</span>
         <h3>Bush &amp; Tree Trimming</h3>
         <p>Overgrown bushes and low branches shaped back down to size — or removed entirely.</p>
         <ul><li>Bush &amp; hedge trimming</li><li>Light tree trimming</li><li>Stump &amp; base cleanup</li></ul>
       </div>
-      <div class="service-card">
+      <div class="service-card has-photo">
+        <img class="service-bg" src="photos/overgrownafter2.jpg" alt="" aria-hidden="true">
         <span class="num">03</span>
         <h3>Yard Cleanups</h3>
         <p>Full property resets — leaves, brush, fence lines, and everything the yard has been collecting.</p>
         <ul><li>Leaf + debris removal</li><li>Fence line clearing</li><li>Brush &amp; junk haul-off</li></ul>
       </div>
-      <div class="service-card">
+      <div class="service-card has-photo">
+        <img class="service-bg" src="photos/lawnplantafter.jpg" alt="" aria-hidden="true">
         <span class="num">04</span>
         <h3>Mulch &amp; Bed Care</h3>
         <p>Fresh mulch and clean bed lines that make the whole property look finished.</p>
         <ul><li>Mulch installation</li><li>Bed edging</li><li>Planting &amp; refreshes</li></ul>
       </div>
-      <div class="service-card">
+      <div class="service-card has-photo">
+        <img class="service-bg" src="photos/bigdrainafter.jpg" alt="" aria-hidden="true">
         <span class="num">05</span>
         <h3>Drainage Solutions</h3>
         <p>Standing water and soggy corners fixed with properly installed French drains.</p>
         <ul><li>French drain install</li><li>Grading &amp; runoff fixes</li><li>Downspout tie-ins</li></ul>
       </div>
-      <div class="service-card">
+      <div class="service-card has-photo">
+        <img class="service-bg" src="photos/fallentree.jpg" alt="" aria-hidden="true">
         <span class="num">06</span>
         <h3>Storm &amp; Tree Cleanup</h3>
         <p>Fallen limbs and split trees cleared quickly so your yard is safe and usable again.</p>
         <ul><li>Fallen tree removal</li><li>Storm debris haul-off</li><li>Root &amp; base cleanup</li></ul>
       </div>
-      <div class="service-card">
+      <div class="service-card has-photo">
+        <img class="service-bg" src="photos/alleyclean.jpg" alt="" aria-hidden="true">
         <span class="num">07</span>
         <h3>Pressure Washing</h3>
         <p>Clean driveways, patios, and surfaces to bring new life back to your property.</p>
         <ul><li>Driveway &amp; patio cleaning</li><li>Deck &amp; siding washing</li><li>Surface stain removal</li></ul>
+      </div>
+      <div class="service-card service-fill">
+        <img class="service-bg" src="photos/cleanlawn%20(5).jpg" alt="" aria-hidden="true">
+        <div class="service-fill-copy">
+          <h3>Ready for a sharper yard?</h3>
+          <p>Tell us what you need — free estimates, usually back within a day.</p>
+          <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+        </div>
       </div>
     </div>
   </div>
