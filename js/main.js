@@ -41,6 +41,11 @@ function initBaSliders() {
     const beforeImg = slider.querySelector('.ba-before-wrap img');
     const handle = slider.querySelector('.ba-handle');
 
+    if (beforeImg) {
+      beforeImg.style.filter = 'grayscale(0.35) brightness(0.94)';
+      beforeImg.style.webkitFilter = 'grayscale(0.35) brightness(0.94)';
+    }
+
     function setPos(pct) {
       pct = Math.max(0, Math.min(100, pct));
       beforeWrap.style.width = pct + '%';
@@ -127,7 +132,7 @@ function initContactForm() {
     ].join('\n');
     const subject = encodeURIComponent('Quote request — ' + data.get('name'));
     const body = encodeURIComponent(lines);
-    window.location.href = `mailto:info@greenmagiclawncare.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Greenmagiclawncare@outlook.com?subject=${subject}&body=${body}`;
   });
 }
 
